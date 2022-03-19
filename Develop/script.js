@@ -43,11 +43,8 @@ var generatePassword = function () {
       return generatePassword();
     }
 
-    console.log(passArray)
-
     var randomizePassArray = function(passArray) {
       var shuffledArray = passArray.sort((a, b) => 0.5 - Math.random());
-      console.log(shuffledArray);
     }
 
     randomizePassArray(passArray);
@@ -76,7 +73,6 @@ var generatePassword = function () {
 function writePassword(completePass) {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-  console.log(completePass);
 
   passwordText.value = password;
 
